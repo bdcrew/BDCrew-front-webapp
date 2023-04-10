@@ -10,7 +10,7 @@ const Layout: React.FC<P> = ({ children }) => {
   return (
     <main className="w-screen h-screen flex flex-col justify-between">
       <Header />
-      <section className="flex relative h-full">
+      <section className="md:flex md:relative h-full">
         <Navigation />
         <Content>{children}</Content>
       </section>

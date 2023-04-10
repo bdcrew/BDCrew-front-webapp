@@ -8,8 +8,8 @@ const Navigation: React.FC<P> = () => {
   const [mobileOpenNav, setMobileOpenNav] = useState(false);
 
   return (
-    <>
-      <div className="md:hidden flex justify-between">
+    <div>
+      <div className="w-full flex md:hidden p-2 border-b-2">
         <div
           onClick={() => {
             setMobileOpenNav(true);
@@ -33,8 +33,8 @@ const Navigation: React.FC<P> = () => {
       </div>
       <NavigationBlur active={mobileOpenNav}>
         <nav className="w-full md:w-64 absolute  md:static md: h-full p-3 border ">
-          <div className={`static h-12 md:hidden `}>a</div>
-          <div className=" border-2 rounded-md border-red-500  text-red-600">
+          <div className={`static h-12 md:hidden w-full text-center`}>Menu</div>
+          <div className="border-2 rounded-md border-red-500  text-red-600">
             <NavigationTitle customize="border-b-red-500">신고</NavigationTitle>
             <ul className="px-3 space-y-2 py-1">
               <li>🤸‍♂️_탈주자</li>
@@ -44,7 +44,7 @@ const Navigation: React.FC<P> = () => {
           </div>
         </nav>
       </NavigationBlur>
-    </>
+    </div>
   );
 };
 

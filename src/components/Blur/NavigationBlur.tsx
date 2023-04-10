@@ -8,8 +8,10 @@ const NavigationBlur: React.FC<P> = ({ children, active }) => {
   return (
     <div
       className={` inset-0 ${
-        active ? "fixed" : "hidden"
-      } md:static md:bg-transparent backdrop-blur-md md:backdrop-blur-0`}
+        active
+          ? "fixed  backdrop-blur-md"
+          : "hidden md:block md:static md:bg-transparent md:backdrop-blur-0"
+      } h-full`}
     >
       {children}
     </div>
