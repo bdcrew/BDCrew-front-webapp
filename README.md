@@ -1,38 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 비디 크루 메인 사이트 
 
-## Getting Started
+## 무엇을 만들까?
 
-First, run the development server:
+### 1. 대문
+" BD 크루를 소개할 수 있는 소개 (Simple is Best)"
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- 스크롤이 되지 않도록 화면을 설계하고, 스크롤이 되지 않도록 이미지를 주도록 한다.
+- 여기선 반드시 스크롤을 막아야 해.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. 유튜브
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+"BD 크루가 재밌게 놀았던 흔적을 영상으로 남기는 곳."
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- 유튜브 API를 이용하여 유튜브 영상들을 보여주는데 시간 순서로 우상단(가장 최신)에서 좌하단(가장 오래된)으로 보여주도록 한다.
+- Scoll Paging 기법을 이용하여 최소한의 갯수만큼만 가져오고, 스크롤 내리면 **정해진 상수(ex: NUMBER_OF_YOUTUBE_VIDEOS)**에 의해서 불러오도록 한다.
+- 무한 API 요청을 막기 위한 방법을 백엔드와 의논하여 정하도록 한다.
+- 영상 관련 컴포넌트 관련해서도 의논하여 명세를 만들도록 한다.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### 3. 방명록
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- 
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 4. 사진방
