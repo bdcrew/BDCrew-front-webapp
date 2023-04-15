@@ -1,5 +1,4 @@
 import { PropsWithChildren } from "react";
-import SideMenu from "../Nav/NavPrefix1280";
 
 interface P extends PropsWithChildren {}
 
