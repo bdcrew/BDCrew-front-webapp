@@ -34,7 +34,7 @@ const Navigation: React.FC<P> = () => {
         </div>
       </div>
       <NavigationBlur active={mobileOpenNav}>
-        <nav className="w-full md:w-64 absolute  md:static md: h-full p-3 border ">
+        <nav className="w-full md:w-64 absolute  md:static md: h-full p-3 ">
           <div className={`static h-12 md:hidden w-full text-center`}>Menu</div>
           <div className="space-y-2">
             <div
