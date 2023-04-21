@@ -1,4 +1,4 @@
-import Layout from "@/src/components/Layout";
+import Layout from "@/components/basic/Layout";
 import "@/styles/globals.css";
 import type { AppProps, NextWebVitalsMetric } from "next/app";
 

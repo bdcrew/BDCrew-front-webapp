@@ -72,21 +72,6 @@ const Navigation: React.FC<P> = () => {
                 Guest Book
               </NavigationTitle>
             </div>
-            <div
-              className="border-2 rounded-md border-gray-500  text-gray-600 cursor-pointer"
-              onClick={() => {
-                navigator.push("/youtube");
-              }}
-            >
-              <NavigationTitle customize="border-b-gray-500">
-                Test
-              </NavigationTitle>
-              <ul className="px-3 space-y-2 py-1">
-                <li>🤸‍♂️_탈주자</li>
-                <li>💩_똥사개</li>
-                <li>💕_혼인신고</li>
-              </ul>
-            </div>
           </div>
         </nav>
       </NavigationBlur>

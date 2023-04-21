@@ -1,0 +1,1 @@
+const getButtonSize = (size: ButtonSize) => {};
