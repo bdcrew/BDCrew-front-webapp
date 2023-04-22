@@ -38,6 +38,16 @@ const Navigation: React.FC<P> = () => {
           <div className={`static h-12 md:hidden w-full text-center`}>Menu</div>
           <div className="space-y-2">
             <div
+              className="border-2 rounded-md border-black  text-black cursor-pointer"
+              onClick={() => {
+                navigator.push("/organization");
+              }}
+            >
+              <NavigationTitle customize="border-b-purple-500">
+                Organization
+              </NavigationTitle>
+            </div>
+            <div
               className="border-2 rounded-md border-red-500  text-red-600 cursor-pointer"
               onClick={() => {
                 navigator.push("/youtube");
