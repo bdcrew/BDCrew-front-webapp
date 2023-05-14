@@ -1,7 +1,7 @@
 import { PropsWithChildren } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import Content from "./Content";
+import ContentLayout from "./ContentLayout";
 import Navigation from "../Navigation";
 
 interface P extends PropsWithChildren {}
@@ -12,7 +12,7 @@ const Layout: React.FC<P> = ({ children }) => {
       <Header />
       <section className="md:flex md:relative h-full">
         <Navigation />
-        <Content>{children}</Content>
+        <ContentLayout>{children}</ContentLayout>
       </section>
       <Footer />
     </main>

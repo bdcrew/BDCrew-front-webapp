@@ -11,10 +11,10 @@ body {
 .space {
   background: linear-gradient(135deg, #2c3a47, #485563, #000000);
   background-size: 300% 300%;
-  animation: gradient 15s ease infinite;
+  animation: space-gradient 15s ease infinite;
 }
 
-@keyframes gradient {
+@keyframes space-gradient {
   0% {
     background-position: 0% 50%;
   }
@@ -24,4 +24,10 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.purple-space {
+  background: radial-gradient(ellipse at bottom, #4b3896 0%, #260f41 100%);
+  background-size: 300% 300%;
+  animation: space-gradient 8s ease infinite;
 }
